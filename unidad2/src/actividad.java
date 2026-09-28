@@ -25,9 +25,20 @@ public class actividad {
         raiz2=Math.sqrt(aleatorio2);
 
         //Falta el cociente hacerlo en casa
+        double cociente;
+        cociente=aleatorio1/aleatorio2;
 
+        System.out.println("Los numeros aleatorios son: "+aleatorio1+" y "+aleatorio2);
+
+        System.out.println("La media es: "+media);
         
-        //Respuesta final System.out.println();
+        System.out.println("La potencia es: "+potencia1);
+        
+        System.out.println("La raiz cuadrada de "+aleatorio1+" es: "+raiz1);
+        
+        System.out.println("La raiz cuadrada de "+aleatorio2+" es: "+raiz2);
+        
+        System.out.println("El cociente es: "+cociente);
 
     }
 
