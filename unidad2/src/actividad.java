@@ -24,7 +24,7 @@ public class actividad {
         double raiz2;
         raiz2=Math.sqrt(aleatorio2);
 
-        //Falta el cociente
+        //Falta el cociente hacerlo en casa
 
         
         //Respuesta final System.out.println();
