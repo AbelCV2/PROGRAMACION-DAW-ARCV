@@ -3,20 +3,18 @@ public class actividad {
         int min1=1;
         int max1=100;
 
-        double aleatorio1=Math.random()*(max1-min1+1)+min1;
+        int aleatorio1=(int)(Math.random()*(max1-min1+1)+min1);
         System.out.println("El primer numero aleatorio es: "+aleatorio1);
 
-        int min2=1;
-        int max2=100;
 
-        double aleatorio2=Math.random()*(max2-min2+1)+min2;
+        int aleatorio2=(int)(Math.random()*(max1-min1+1)+min1);
         System.out.println("El segundo numero aleatorio es: "+aleatorio2);
 
         double media;
-        media=(aleatorio1+aleatorio2)/2;
+        media=(aleatorio1+aleatorio2)/2.0;
 
-        double potencia1;
-        potencia1=Math.pow(aleatorio2, aleatorio1);
+        int potencia1;
+        potencia1=(int)(Math.pow(aleatorio2, aleatorio1));
 
         double raiz1;
         raiz1=Math.sqrt(aleatorio1);
@@ -24,8 +22,8 @@ public class actividad {
         double raiz2;
         raiz2=Math.sqrt(aleatorio2);
 
-        //Falta el cociente hacerlo en casa
-        double cociente;
+        //Falta el cociente (hacerlo en casa) y hacer los println de los resultados 
+        int cociente;
         cociente=aleatorio1/aleatorio2;
 
         System.out.println("Los numeros aleatorios son: "+aleatorio1+" y "+aleatorio2);
@@ -39,6 +37,11 @@ public class actividad {
         System.out.println("La raiz cuadrada de "+aleatorio2+" es: "+raiz2);
         
         System.out.println("El cociente es: "+cociente);
+
+        //Tarea hecha 
+
+        
+
 
     }
 

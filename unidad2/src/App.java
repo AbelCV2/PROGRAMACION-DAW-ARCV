@@ -3,7 +3,7 @@
  * App
  */
 
-
+import java.util.Scanner;
 
 /**
      * 
@@ -11,6 +11,8 @@
      * @version 1.0
      * Unidad2: Fundamentos de la programacion 
      */
+//import utilidades.Matematicas;
+
 public class App {
    /**
     * Funcion main para ejecutar codigo java
@@ -79,6 +81,110 @@ public class App {
     // double aleatorio=(int)(Math.random()*(max-min+1)+min);
     // System.out.println(letra+aleatorio);
 
+    // int numero1=3;
+    // int numero2=5;
 
+    // System.out.println("La suma de "+numero1+" y "+numero2+" es: "+Matematicas.suma(numero1, numero2));
+    // System.out.println("La multiplicacion de "+numero1+" y "+numero2+" es: "+Matematicas.multiplicar(numero1, numero2));
+
+    // System.out.println("El resto de dividir 5 entre 2 es: "+(5%2));
+
+    // int variable=2;
+    // System.out.println("La variable vale: "+variable);
+    // variable++; // variable=variable+1;
+    // System.out.println("La variable vale: "+variable);
+
+    // // ================================
+    
+    // int a=5;
+    // int b;
+    // b=a++;
+
+    //System.out.println("El valor de a es: "+a);
+    //System.out.println("El valor de b es: "+b);  
+
+    //TENER CUIDADO CON ESTO
+    //====================================
+
+    //No es lo mismo a++ y ++a, son diferentes
+    //Revisar diapositivas en la seccion de Operadores (Cuadro)
+
+
+    //int valor1=3;
+    //int valor2=5;
+    //int suma=valor1+valor2; //Lo tipico
+    //int valor1+=valor2; //Es lo mismo de arriba pero abreviado.
+
+    //Por lo tanto, suma=valor1+valor2; es lo mismo que valor1+=valor2;
+    //HAY MAS OPERACIONES ABREVIADAS, REVISAR DIAPOSITIVAS DE OPERADORES (CUADRO)
+
+    // x  =  a   ==   10   ?   b   *   2   :   a;
+    // Si a es igual a 10, entonces x=b*2, sino x=a
+    // == IGUAL / ? ENTONCES / : SINO 
+
+
+    //CONDICIONES IF ELSE
+
+    // int numero=3;
+    // int numero2=5;
+    // int resultado = 0;
+
+    // if(numero>numero2){
+    //     System.out.println("El numero es mayor que el numero2");
+    //     //SI SE CUMPLE, HARA ESTO
+    // }
+
+    // else {        //System.out.println("El numero " +numero+ " es menor que el numero "+numero2);
+    //     //SI NO SE CUMPLE, HARA ESTO
+    //     resultado=numero-numero2;
+    // }
+    
+    
+        // System.out.println("El resultado es: "+resultado);
+        // System.out.println("POR AQUI VOY");
+
+        //PRACTICA DIAS DE LA SEMANA
+
+        int lunes=1;
+        int martes=2;
+        int miercoles=3;
+        int jueves=4;
+        int viernes=5;
+        int sabado=6;
+        int domingo=7;
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Introduce un numero del 1 al 7 para saber que dia de la semana es:");
+        int dia=sc.nextInt();
+
+        if (dia == 1) {
+            System.out.println("El dia es Lunes");
+        }
+
+        if (dia == 2) {
+            System.out.println("El dia es Martes");
+        }
+
+        if (dia == 3) {
+            System.out.println("El dia es Miercoles");
+        }
+
+        if (dia == 4) {
+            System.out.println("El dia es Jueves");
+        }
+
+        if (dia == 5) {
+            System.out.println("El dia es Viernes");
+        }
+
+        if (dia == 6) {
+            System.out.println("El dia es Sabado");
+        }
+
+        if (dia == 7) {
+            System.out.println("El dia es Domingo");
+        }
+
+        sc.close();
     }
 }
