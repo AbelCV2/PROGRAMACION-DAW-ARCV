@@ -145,13 +145,13 @@ public class App {
 
         //PRACTICA DIAS DE LA SEMANA
 
-        int lunes=1;
-        int martes=2;
-        int miercoles=3;
-        int jueves=4;
-        int viernes=5;
-        int sabado=6;
-        int domingo=7;
+        // int lunes=1;
+        // int martes=2;
+        // int miercoles=3;
+        // int jueves=4;
+        // int viernes=5;
+        // int sabado=6;
+        // int domingo=7;
 
         Scanner sc=new Scanner(System.in);
         System.out.println("Introduce un numero del 1 al 7 para saber que dia de la semana es:");
