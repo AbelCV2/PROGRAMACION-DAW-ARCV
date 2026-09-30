@@ -60,7 +60,8 @@ public class calificaciones {
             case 10:
                 System.out.println("Usted ha sido sobresaliente");
                 break;
-            
+            default:
+                System.out.println("La nota introducida es incorrecta");
         }
 
         //ESTE HA SIDO CON SWITCH Y BREAK
