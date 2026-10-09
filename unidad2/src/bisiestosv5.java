@@ -47,10 +47,13 @@ public class bisiestosv5 {
                     System.out.println("La fecha introducida del: "+dia+" de Febrero del año "+anio+" es correcta y es bisiesto");
                 }
 
-                else if (dia==29 && (anio%4!=0 && anio%100==0) || anio%400!=0) {
+                else if (dia==29 && ((anio%4!=0 && anio%100==0) || anio%400!=0)) {
                     System.out.println("La fecha introducida es incorrecta (Los dias 29 de Febrero solo existen en los años bisiestos)");
                 }
                 
+                else if (dia<29 && (anio%4==0 && anio%100!=0) || anio%400==0) {
+                    System.out.println("La fecha introducida del: "+dia+" de Febrero del año "+anio+" es correcta y no es bisiesto");
+                }
                 else {
                     System.out.println("La fecha introducida del: "+dia+" de Febrero del año "+anio+" es correcta y no es bisiesto");
                 }

@@ -153,38 +153,67 @@ public class App {
         // int sabado=6;
         // int domingo=7;
 
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Introduce un numero del 1 al 7 para saber que dia de la semana es:");
-        int dia=sc.nextInt();
+        // Scanner sc=new Scanner(System.in);
+        // System.out.println("Introduce un numero del 1 al 7 para saber que dia de la semana es:");
+        // int dia=sc.nextInt();
 
-        if (dia == 1) {
-            System.out.println("El dia es Lunes");
-        }
+        // if (dia == 1) {
+        //     System.out.println("El dia es Lunes");
+        // }
 
-        if (dia == 2) {
-            System.out.println("El dia es Martes");
-        }
+        // if (dia == 2) {
+        //     System.out.println("El dia es Martes");
+        // }
 
-        if (dia == 3) {
-            System.out.println("El dia es Miercoles");
-        }
+        // if (dia == 3) {
+        //     System.out.println("El dia es Miercoles");
+        // }
 
-        if (dia == 4) {
-            System.out.println("El dia es Jueves");
-        }
+        // if (dia == 4) {
+        //     System.out.println("El dia es Jueves");
+        // }
 
-        if (dia == 5) {
-            System.out.println("El dia es Viernes");
-        }
+        // if (dia == 5) {
+        //     System.out.println("El dia es Viernes");
+        // }
 
-        if (dia == 6) {
-            System.out.println("El dia es Sabado");
-        }
+        // if (dia == 6) {
+        //     System.out.println("El dia es Sabado");
+        // }
 
-        if (dia == 7) {
-            System.out.println("El dia es Domingo");
-        }
+        // if (dia == 7) {
+        //     System.out.println("El dia es Domingo");
+        // }
 
-        sc.close();
+        // sc.close();
+
+        //CLASE 4 DE BUBCLES:
+
+        //Estructuras: FOR    //SE DONDE EMPIEZO Y DONDE ACABO (MEJOR SINTATICTAMENTE)
+
+        // for(int i=0; i<3; i++) {
+        //     System.out.println(i);
+        // }
+
+        //Estructura: WHILE   //"MIENTRAS" SI ESO SE CUMPLE HACERLO, SINO, NO. DEPENDE DE LA CONDICION
+
+        // int i=0;
+        // while(i<=5){
+        //     System.out.println(i);
+        //     i++;
+        // }
+
+        //Estructura: DO WHILE   //HAZ ALGO MIENTRAS SE CUMPLA UNA CONDICION.  SE HACE UNA VEZ Y LUEGO SE COMPRUEBA SI SE REPITE O NO
+
+        // int i=0;
+        // do {
+        //     System.out.println(i);          //i++ Es tomar el valor de i y luego incrementarlo
+        //     i++;
+        // }while(i<=5);
+        
+
+        
+
+
     }
 }
