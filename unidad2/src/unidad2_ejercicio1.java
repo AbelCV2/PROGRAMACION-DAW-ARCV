@@ -12,7 +12,7 @@ public class unidad2_ejercicio1 {
             return 2;
         }
 
-        else if (hora<5 && hora>=21){
+        else if (hora>5 && hora<=21){
             return 3;
         }
 
@@ -46,3 +46,5 @@ public class unidad2_ejercicio1 {
 
     }
 }
+
+//TERMINADO!

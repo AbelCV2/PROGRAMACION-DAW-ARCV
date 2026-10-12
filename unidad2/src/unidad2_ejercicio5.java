@@ -50,35 +50,16 @@ public static int Cursos (int dia) {
 
         else if (dia==6) {
 
-            System.out.println("LUNES");
-            System.out.println("Entorno de desarrollo");
-            System.out.println("Lenguajes de marcas");
-            System.out.println("Sistemas informaticos");
-            System.out.println("Programacion");
-            System.out.println(" ");
-            System.out.println("MARTES");
-            System.out.println("Entorno de desarrollo");
-            System.out.println("Lenguajes de marcas");
-            System.out.println("Sistemas informaticos");
-            System.out.println("Programacion");
-            System.out.println(" ");
-            System.out.println("MIERCOLES");
-            System.out.println("Entorno de desarrollo");
-            System.out.println("Lenguajes de marcas");
-            System.out.println("Sistemas informaticos");
-            System.out.println("Programacion");
-            System.out.println(" ");
-            System.out.println("JUEVES");
-            System.out.println("Entorno de desarrollo");
-            System.out.println("Lenguajes de marcas");
-            System.out.println("Sistemas informaticos");
-            System.out.println("Programacion");
-            System.out.println(" ");
-            System.out.println("VIERNES");
-            System.out.println("Entorno de desarrollo");
-            System.out.println("Lenguajes de marcas");
-            System.out.println("Sistemas informaticos");
-            System.out.println("Programacion");
+            Cursos(1);
+            System.out.println("---------------------------------------------------");
+            Cursos(2);
+            System.out.println("---------------------------------------------------");
+            Cursos(3);
+            System.out.println("---------------------------------------------------");
+            Cursos(4);
+            System.out.println("---------------------------------------------------");
+            Cursos(5);
+            System.out.println("---------------------------------------------------");
 
             return 6;
 
@@ -150,3 +131,4 @@ public static int Cursos (int dia) {
  
     }
 }
+//TERMINADO!

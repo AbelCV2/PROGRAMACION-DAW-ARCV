@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import javax.print.attribute.standard.Media;
+
 public class unidad2_ejercicio4 {
     public static boolean Media(int nota1, int nota2) {
         double notamedia=(nota1+nota2)/2;
@@ -12,15 +12,7 @@ public class unidad2_ejercicio4 {
         }
     }
 
-    public static boolean Recuperacion(int notamedia) {
-        if (notamedia<5) {
-            return true;
-        }
 
-        else {
-            return false;
-        }
-    }
     public static void main(String[] args) {
         int nota1, nota2;
         double notamedia;
@@ -49,13 +41,14 @@ public class unidad2_ejercicio4 {
             System.out.println("Usted requiere recuperacion...");
 
             System.out.println("Cual fue su calificacion en el examen de recuperacion (APTO/NO APTO):");
-            recuperacion=sc.next();
+            sc.nextLine();
+            recuperacion=sc.nextLine();
 
-            if (recuperacion=="APTO") {
+            if (recuperacion.equalsIgnoreCase("apto")) {
                 System.out.println("Usted ha aprobado con 5");
             }
 
-            else if (recuperacion=="NO APTO") {
+            else if (recuperacion.equalsIgnoreCase("no apto")) {
                 System.out.println("Usted ha sido suspenso");
             }
 
@@ -70,3 +63,5 @@ public class unidad2_ejercicio4 {
 
     }
 }
+
+//TERMINADO!
