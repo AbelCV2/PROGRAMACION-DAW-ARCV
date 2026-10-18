@@ -20,15 +20,23 @@ public class pokerv1 {
         System.out.println("Las cartas del Bot 2: * *");
         System.out.println("Las cartas del Bot 3: * *");
 
-        if (cartabot1a>carta1) {
-            System.out.println("El Bot 1 Apuesta:"+ (int)Math.random()*(100-50+1)+50);
-        }
+        // if (cartabot1a>carta1) {
+        //     System.out.println("El Bot 1 Apuesta:"+ (int)Math.random()*(100-50+1)+50);
+        // }
 
-        else if (cartabot1b>carta2) {
-            System.out.println("El Bot 1 Apuesta:"+ (int)Math.random()*(100-50+1)+50);
-        }
+        // else if (cartabot1b>carta2) {
+        //     System.out.println("El Bot 1 Apuesta:"+ (int)Math.random()*(100-50+1)+50);
+        // }
 
-        else if (cartabot2a>carta2) {}
+        // else if (cartabot2a>carta2) {
+        //     System.out.println("El Bot 2 Apuestta:"+ (int)Math.random()*(100-50+1)+50);
+        // }
+
+        do {
+            System.out.println("El Bot 1 Apuesta:"+(int)Math.random()*(100-50+1)+50);
+            System.out.println("El Bot 2 Apuesta:"+(int)Math.random()*(100-50+1)+50);
+            System.out.println("El Bot 3 Apuesta:"+(int)Math.random()*(100-50+1)+50);
+        }while(cartabot1a>carta1 || cartabot1a>carta2 || cartabot2a>carta1 || cartabot2a>carta2 || cartabot3a>carta1);
     }
     
 }
