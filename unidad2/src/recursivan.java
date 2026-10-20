@@ -10,6 +10,6 @@ public class recursivan {
     }
 
     public static void main(String[] args) {
-        System.out.println(Sum(6));
+        System.out.println(Sum(10));
     }
 }

@@ -44,14 +44,14 @@ public class unidad2_ejercicio4 {
             sc.nextLine();
             recuperacion=sc.nextLine();
 
-            if (recuperacion.equalsIgnoreCase("apto")) {
+            if (recuperacion.equalsIgnoreCase("apto")) {  //.equals() es para comparar el contenido (distingue entre mayusculas y minusculas) | .equalsIgnoreCase() es para comparar el contenido (no distingue entre mayuculas y minusculas)
                 System.out.println("Usted ha aprobado con 5");
             }
 
             else if (recuperacion.equalsIgnoreCase("no apto")) {
                 System.out.println("Usted ha sido suspenso");
             }
-
+            
             else {
                 System.out.println("Nota incorrecta");
             }

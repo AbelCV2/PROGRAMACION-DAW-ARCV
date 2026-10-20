@@ -5,12 +5,12 @@ public class unidad2_ejercicio9 {
     }
     public static void Primos (int n) {
         
-        boolean primo=false;
+        boolean primo=true;
         
         if (n<=1) {
             primo=false;
         }
-
+        
         else {
             int i=0;
             for (i=2; i<=Raizcuadrada(n); i++) {
@@ -18,6 +18,7 @@ public class unidad2_ejercicio9 {
                     primo=false;
                     break;
                 }
+                
                 
                 else {
                     primo=true;
@@ -37,7 +38,7 @@ public class unidad2_ejercicio9 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
-        for (int i=0; i<=100; i++) {
+        for (int i=2; i<=100; i++) {
            System.out.print(i+" ");
            Primos(i); 
         }

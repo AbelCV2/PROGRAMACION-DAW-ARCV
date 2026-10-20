@@ -8,7 +8,7 @@ public class unidad2_ejercicio7 {
 
         do {
             
-            System.out.println("Introduzca un numero aleatorio:");
+            System.out.println("Introduzca un numero aleatorio (Ingrese 0 para detener):");
             num=sc.nextInt(); sc.nextLine();
 
             if (num==7 || num==-7) {
