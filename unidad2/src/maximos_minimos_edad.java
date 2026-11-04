@@ -10,7 +10,7 @@ public class maximos_minimos_edad {
 
         do {
             numero=sc.nextInt(); sc.nextLine();
-            if (contador==0) {
+                if (contador==0) {
                 maximo=numero;
                 minimo=numero;
                 

@@ -1,6 +1,12 @@
 {
     "java.project.sourcePaths": [
-        "unidad2\\src"
+        "unidad3/src",
+        "unidad2/src",
+        "ExamenUnidad2/src",
+        "MatematicasMain"
     ],
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [
+        "Matematicas/Matematicas.jar",
+        "MisMatematicas2/MisMatematicas2.jar"
+    ]
 }

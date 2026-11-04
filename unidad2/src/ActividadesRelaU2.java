@@ -188,8 +188,9 @@ public class ActividadesRelaU2 {
     //     System.out.println("Ingrese su segunda nota:");
     //     nota2=sc.nextInt();
 
-    //     if (nota1>10 || nota2>10) {
+    //     if (nota1>10 || nota2>10 || nota1<0 || nota2<0) {
     //         System.out.println("Nota incorrecta");
+            
     //     }
 
     //     else {
@@ -491,6 +492,9 @@ public class ActividadesRelaU2 {
 
     // public static void main(String[] args) {
     //     int num, contador=0;
+    //     int contadorpositivo=0;
+    //     int contadornegativo=0;
+    //     int suma=0;
 
     //     Scanner sc=new Scanner(System.in);
 
@@ -502,10 +506,20 @@ public class ActividadesRelaU2 {
     //         if (num==7 || num==-7) {
     //             contador=contador+1;
     //         }
+
+    //         if (num>=0) {
+    //             contadorpositivo++;
+    //         }
+
+    //         if (num<0) {
+    //             contadornegativo++;
+    //         }
     //     }while(num!=0);
 
     //     System.out.println("Terminando...");
     //     System.out.println("El numero 7 y -7 se han repetido: "+contador+" veces");
+    //     System.out.println("Los numero positivos ingresados fueron: "+contadorpositivo);
+    //     System.out.println("Los numeros negativos ingresados fueron:"+contadornegativo);
 
         
     // }
