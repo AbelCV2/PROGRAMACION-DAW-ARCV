@@ -64,9 +64,9 @@ public class Persona2 {
     this.nombre=objeto.getNombre();
     this.fechaNacimiento=objeto.getFechaNacimiento();
     this.estatura=objeto.getEstatura();
-    this.DNI=objeto.getDNI();
-    this.hijos=objeto.getHijos();
-    this.pareja=objeto.getPareja();
+    // this.DNI=objeto.getDNI();
+    // this.hijos=objeto.getHijos();
+    // this.pareja=objeto.getPareja();
  }
 
  //Metodos

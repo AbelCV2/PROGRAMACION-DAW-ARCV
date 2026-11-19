@@ -35,7 +35,7 @@ public class Actividad1_BufferedReader {
                     String texto=separar.next(); //Saco la siguiente palabra
 
                     //Ahora usar el equalsIgnoreCase para distinguir mayusculas y minusculas de la palabra
-                    if (texto.equalsIgnoreCase("hola")) { //"Hola" es mi palabra
+                    if (texto.equalsIgnoreCase(palabra)) { //"Hola" es mi palabra
                         contador++; //Si la palabra hola aparece el contador ira subiendo de 1 en 1
                     }
 

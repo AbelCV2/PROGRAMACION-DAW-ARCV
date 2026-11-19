@@ -7,6 +7,9 @@
     ],
     "java.project.referencedLibraries": [
         "Matematicas/Matematicas.jar",
-        "MisMatematicas2/MisMatematicas2.jar"
+        "MisMatematicas2/MisMatematicas2.jar",
+        "c:\\Users\\casti\\Downloads\\json-simple-1.1.1.jar",
+        "c:\\Users\\casti\\Downloads\\opencsv-5.9.jar",
+        "c:\\Users\\casti\\Downloads\\commons-lang3-3.22.0.jar"
     ]
 }

@@ -14,6 +14,7 @@ public class Main2 {
         p1.setCedula("3494293ESP");
 
 
+
         // Cambiar datos de p3 (Copia)
 
         p3.setNombre("Oliver");
@@ -45,7 +46,7 @@ public class Main2 {
         CiudadU3_1 ciudad1 = new CiudadU3_1(04600, "Huercal-Overa", 1);
         p1.setCnacimiento(ciudad1);
 
-        p1.ImprimeCNacimiento();
+        //p1.cImprimeCNacimiento();
 
         //NO IMPRIME LA INFORMACION
 
