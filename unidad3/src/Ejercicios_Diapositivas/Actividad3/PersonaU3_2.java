@@ -1,4 +1,4 @@
-package Actividad3;
+package Ejercicios_Diapositivas.Actividad3;
 public class PersonaU3_2 {
     private String docld;
     private String nombre;

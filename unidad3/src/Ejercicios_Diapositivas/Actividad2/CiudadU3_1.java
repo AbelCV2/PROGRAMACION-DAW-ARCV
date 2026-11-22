@@ -1,8 +1,8 @@
-package Actividad2;
+package Ejercicios_Diapositivas.Actividad2;
 public class CiudadU3_1 {
-    int codigo;
-    String nombre;
-    int indicativo;
+    private int codigo;
+    private String nombre;
+    private int indicativo;
 
     public CiudadU3_1() {}
 

@@ -1,5 +1,9 @@
 package Relacion_Ejercicios.Ejercicio6;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 public class Juego {
     int ganadas1, ganadas2;
 
@@ -86,5 +90,21 @@ public class Juego {
         Juego partida = new Juego(0, 0);
 
         partida.cartaAlta();
+
+        try {
+            String ruta="./unidad3/src/Relacion_Ejercicios/Ejercicio6";
+            File archivosalida = new File(ruta, "EstadisticasPartida_Juego.txt");
+            PrintWriter statspartida = new PrintWriter(archivosalida);
+            // PrintWriter statspartida = new PrintWriter(new File(ruta,"EstadisticasPartida.txt"));
+            statspartida.append("Victorias del jugador 1: "+partida.getGanadas1());
+            statspartida.println(" ");
+            statspartida.append("Victorias del jugador 2: "+partida.getGanadas2());
+            statspartida.println(" ");
+            statspartida.close();
+            System.out.println("===================================");
+            System.out.println("El archivo se ha creado con exito");
+        }catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

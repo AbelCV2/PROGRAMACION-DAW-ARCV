@@ -1,4 +1,4 @@
-package Actividad2;
+package Ejercicios_Diapositivas.Actividad2;
 
 public class Main2 {
     public static void main(String[] args) {

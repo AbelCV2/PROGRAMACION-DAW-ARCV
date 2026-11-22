@@ -1,4 +1,4 @@
-package Actividad1.CuentaCorriente;
+package Ejercicios_Diapositivas.Actividad1.CuentaCorriente;
 public class CuentaCorriente {
     private String numeroCuenta;
     private double saldo;

@@ -1,4 +1,4 @@
-package Actividad1.Persona;
+package Ejercicios_Diapositivas.Actividad1.Persona;
 public class Persona1 {
     
     //PERSONA

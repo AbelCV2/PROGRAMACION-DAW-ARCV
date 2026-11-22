@@ -1,9 +1,9 @@
-package Actividad4;
+package Ejercicios_Diapositivas.Actividad4;
 public class PiezaU3_3 {
-    long codigo;
-    String nombre;
-    String color;
-    int precio;
+    private long codigo;
+    private String nombre;
+    private String color;
+    private int precio;
 
     public PiezaU3_3() {}
 

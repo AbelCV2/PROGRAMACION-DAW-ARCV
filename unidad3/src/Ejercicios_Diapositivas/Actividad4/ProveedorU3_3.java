@@ -1,9 +1,9 @@
-package Actividad4;
+package Ejercicios_Diapositivas.Actividad4;
 public class ProveedorU3_3 {
-    long codigo;
-    String direccion;
-    String ciudad;
-    String provincia;
+    private long codigo;
+    private String direccion;
+    private String ciudad;
+    private String provincia;
 
     public ProveedorU3_3() {}
     

@@ -213,7 +213,7 @@ public class Juegov3 {
 
         try {
             String ruta="./unidad3/src/Relacion_Ejercicios/Ejercicio6";
-            File archivosalida = new File(ruta, "EstadisticasPartida.txt");
+            File archivosalida = new File(ruta, "EstadisticasPartida_JuegoV3.txt");
             PrintWriter statspartida = new PrintWriter(archivosalida);
             // PrintWriter statspartida = new PrintWriter(new File(ruta,"EstadisticasPartida.txt"));
             statspartida.append("Victorias del jugador 1: "+partida.getGanadas1());

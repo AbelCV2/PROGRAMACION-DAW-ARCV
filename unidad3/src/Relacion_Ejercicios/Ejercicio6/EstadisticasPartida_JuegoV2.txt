@@ -1,0 +1,2 @@
+Victorias del jugador 1: 2 
+Victorias del jugador 2: 3 

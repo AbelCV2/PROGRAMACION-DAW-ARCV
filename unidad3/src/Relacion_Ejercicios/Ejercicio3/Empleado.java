@@ -49,4 +49,12 @@ public class Empleado {
         this.telefonos = telefonos;
     }
 
+    public Domicilio getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(Domicilio domicilio) {
+        this.domicilio = domicilio;
+    }
+
 }

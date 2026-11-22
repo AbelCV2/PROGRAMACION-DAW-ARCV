@@ -1,15 +1,20 @@
 package Relacion_Ejercicios.Ejercicio3;
 
+
 public class Trabaja {
-    
+
     Sucursal sucursal;
     Empleado empleado;
+    String horario;
+    String dia;
 
     public Trabaja() {}
 
-    public Trabaja(Sucursal sucursal, Empleado empleado) {
-        this.sucursal=sucursal;
-        this.empleado=empleado;
+    public Trabaja(Sucursal sucursal, Empleado empleado, String horario, String dia) {
+        this.sucursal = sucursal;
+        this.empleado = empleado;
+        this.horario = horario;
+        this.dia = dia;
     }
 
     public Sucursal getSucursal() {
@@ -28,5 +33,19 @@ public class Trabaja {
         this.empleado = empleado;
     }
 
-    
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
 }

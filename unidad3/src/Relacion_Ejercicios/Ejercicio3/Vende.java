@@ -1,16 +1,20 @@
 package Relacion_Ejercicios.Ejercicio3;
 
+
 public class Vende {
-    //RELACION ENTRE SUCURSAL --- PRODUCTO
+
+    // RELACION
+    
     Sucursal sucursal;
     Producto producto;
-
+    double precioVenta;
 
     public Vende() {}
 
-    public Vende(Sucursal sucursal, Producto producto) {
-        this.sucursal=sucursal;
-        this.producto=producto;
+    public Vende(Sucursal sucursal, Producto producto, double precioVenta) {
+        this.sucursal = sucursal;
+        this.producto = producto;
+        this.precioVenta = precioVenta;
     }
 
     public Sucursal getSucursal() {
@@ -29,5 +33,12 @@ public class Vende {
         this.producto = producto;
     }
 
-    
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
 }
+

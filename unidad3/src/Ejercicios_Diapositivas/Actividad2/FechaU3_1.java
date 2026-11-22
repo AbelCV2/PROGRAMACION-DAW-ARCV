@@ -1,8 +1,8 @@
-package Actividad2;
+package Ejercicios_Diapositivas.Actividad2;
 public class FechaU3_1 {
-    int dia;
-    int mes;
-    int anio;
+    private int dia;
+    private int mes;
+    private int anio;
 
     
     //Constructor por defecto

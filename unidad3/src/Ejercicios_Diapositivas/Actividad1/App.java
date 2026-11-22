@@ -1,6 +1,6 @@
-package Actividad1;
-import Actividad1.CuentaCorriente.CuentaCorriente;
-import Actividad1.Persona.Persona1;
+package Ejercicios_Diapositivas.Actividad1;
+import Ejercicios_Diapositivas.Actividad1.CuentaCorriente.CuentaCorriente;
+import Ejercicios_Diapositivas.Actividad1.Persona.Persona1;
 
 public class App {
     //Atributos de perro

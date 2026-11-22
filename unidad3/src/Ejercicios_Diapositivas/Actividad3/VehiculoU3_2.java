@@ -1,11 +1,11 @@
-package Actividad3;
+package Ejercicios_Diapositivas.Actividad3;
 public class VehiculoU3_2 {
-    String marca;
-    String referencia;
-    int modelo;
-    String placa;
-    String color;
-    int valor;
+    private String marca;
+    private String referencia;
+    private int modelo;
+    private String placa;
+    private String color;
+    private int valor;
 
     public VehiculoU3_2() {}
 

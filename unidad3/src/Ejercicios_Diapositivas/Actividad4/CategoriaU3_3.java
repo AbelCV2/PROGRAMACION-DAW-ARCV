@@ -1,7 +1,7 @@
-package Actividad4;
+package Ejercicios_Diapositivas.Actividad4;
 public class CategoriaU3_3 {
-    long codigo;
-    String nombre;
+    private long codigo;
+    private String nombre;
 
     public CategoriaU3_3() {}
 

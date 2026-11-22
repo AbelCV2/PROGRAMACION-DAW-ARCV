@@ -1,4 +1,4 @@
-package Actividad2;
+package Ejercicios_Diapositivas.Actividad2;
 public class PersonaU3_1 {
     private String cedula;
     private String nombre;
