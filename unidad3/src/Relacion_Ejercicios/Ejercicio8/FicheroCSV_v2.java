@@ -13,6 +13,10 @@ public class FicheroCSV_v2 {
         //ESTO CREA UNA LISTA VACIA DONDE SE IRAN GUARDANDO CADA OBJETO PARA MI CLASE PERSONA QUE VOY A CREAR
         //A PARTIR DE LOS DATOS DEL ARCHIVO CSV
 
+        // QUE ES LIST? SIMILAR AL ARRAY TAMBIEN SIRVE PARA ALMACENAR VARIOS ELEMENTOS, LA DIFERENCIA ES QUE EL ARRAY TIENE UN TAMAÑO FIJO
+        // EN CAMBIO LIST PUEDE CRECER O REDUCIRSE
+        // Y PARA AÑADIR OBJETOS UTILIZAMOS EL .ADD(); ... MAS ADELANTE SE VERA
+
         try {
             //BUFFERREADER PARA LEER EL ARCHIVO CSV
             BufferedReader csv=new BufferedReader(new FileReader("./unidad3/src/Relacion_Ejercicios/Ejercicio8/Personas.csv"));
@@ -29,11 +33,11 @@ public class FicheroCSV_v2 {
             //IRA GUARDANDO CADA LINEA DE TEXTO LEIDA EN LA VARIABLE "LINEA"
             while((linea=csv.readLine()) != null) {
                 
-                //EN LA PRIMERA LINEA DEL BUCLE, ENTRA AQUI |
-                                                        //  V
+                //EN LA PRIMERA LINEA DEL BUCLE, ENTRA AQUI 
                 
                 if(esPrimeraLinea) {
                     esPrimeraLinea=false; //APAGA EL INTERRUMPTOR (LE DA EL VALOR FALSE) PARA NO VOLVER A ENTRAR
+                    
                     //Y EJECUTA CONTINUE PARA QUE EL PROGRAMA IGNORE EL RESTO DEL CODIGO DE ESA VUELTA
                     //Y SALTE DIRECTAMENTE A LEER LA SEGUNDA LINEA 
                     continue;
@@ -57,16 +61,27 @@ public class FicheroCSV_v2 {
                 String poblacion = datos[3].trim(); //Y TAMBIEN CON EL ULTIMO PEDAZO (HUERCAL OVERA)
                 
 
-                //AHORA LLAMAR AL CONSTRUCTO DE MI CLASE "PERSONA" Y DARLE LAS 4 VARIABLES LIMPIAS
+                //AHORA LLAMAR AL CONSTRUCTOr DE MI CLASE "PERSONA" Y DARLE LAS 4 VARIABLES LIMPIAS
                 //PARA FABRICAR UN NUEVO OBJETO CON ESOS ATRIBUTOS
                 Persona p = new Persona(nombre, edad, telefono, poblacion);
 
                 //listaPersonas.add(p) --> METE EL OBJETO "PERSONA" RECIEN CREADO ("P") DENTRO DE UNA LISTA
                 //QUE CREAMOS AL PRINCIPIO, Y EL BUCLE VUELVE A EMPEZAR CON LA SIGUIENTE LINEA DEL CSV
                 listaPersonas.add(p);
+
+                //EN SU LUGAR SE PODRIAN CREAR MAS OBJETOS DE PERSONA (P2, P3, P4, ETC) PERO SERIA POCO PRACTICO, PORQUE SI EL ARCHIVO TUVIERA MUCHISIMOS MAS VALORES
+                //CREAR UN OBJETO PARA CADA UNO SERIA MUCHO TRABAJO, POR ESO SE USO EL WHILE, QUE MIENTRAS NO SE LLEGUE AL FINAL DEL ARCHIVO SEGUIRA REPITIENDO EL BUCLE
+
+                // EL PERSONA P = NEW PERSONA (...) CREA EL OBJETO NUEVO EN LA MEMORIA
+                // P HACE REFERENCIA A ESE OBJETO
+                // LISTAPERSONAS.ADD(P) GUARDA UNA REFERENCIA A ESE OBJETO EN LA LISTA
+                // CUANDO EL BUCLE VUELVE A EMEPEZAR, P PASA A REFERENCIAR EL SIGUIENTE OBJETO NUEVO
+
+                // NOTA: NO SE ESTAN SOBREESCRIBIENDO LAS PERSONAS ANTERIORES, PORQUE LA LISTA CONSERVA SUS REFERENCIAS
+
             }
         }catch(IOException e) {
-            System.out.println("No se pudo encontrar el archivo o esta dañado" + e.getMessage());
+            System.out.println("No se pudo encontrar el archivo o esta dañado "+e.getMessage());
         }
 
         for (Persona p : listaPersonas) {
