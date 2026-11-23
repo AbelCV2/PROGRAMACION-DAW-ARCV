@@ -6,10 +6,10 @@ public class Luchav2 {
         Heroe heroe1 = new Heroe("Hercules", 250, 50);
         Monstruo monstruo1 = new Monstruo("Cancerbero", 200, 50);
 
-        // Turno inicial aleatorio
-        boolean turnoHeroe = Math.random() < 0.5;
+        // TURNO ALEATORIO
+        boolean turnoHeroe = Math.random()<0.5;
 
-        // Mientras ambos tengan vida
+        // MIENTRAS AMBOS TENGAN VIDA
         while (heroe1.getVida()>0 && monstruo1.getVidaM()>0) {
 
             if (turnoHeroe) {
@@ -19,7 +19,9 @@ public class Luchav2 {
                 monstruo1.RecibirDanoM(heroe1.getAtaque());
                 monstruo1.ImprimirDanoRecibidoM();
 
-            } else {
+            } 
+            
+            else {
 
                 System.out.println("Ataca el monstruo: "+monstruo1.getNombreM());
 
@@ -28,18 +30,20 @@ public class Luchav2 {
 
             }
 
-            // Cambiar el turno
+            // ESTO ES PARA CAMBIAR EL TURNO
             turnoHeroe = !turnoHeroe;
         }
 
-        // Comprobar vencedor
+        // AQUI COMPROBAMOS EL VENCEDOR
         System.out.println("---FIN DEL COMBATE---");
 
         if (heroe1.getVida()>0) {
             System.out.println("El ganador es "+heroe1.getNombre());
             System.out.println("Vida restante: "+heroe1.getVida());
 
-        } else {
+        } 
+        
+        else {
             System.out.println("El ganador es "+monstruo1.getNombreM());
             System.out.println("Vida restante: "+monstruo1.getVidaM());
         }
