@@ -64,8 +64,33 @@ public class Ejercicio1V3 {
             System.out.println("¿Tiene tarjeta?");
             tarjeta=sc.nextBoolean();
 
-            System.out.println("Aqui tiene sus entradas. Gracias por su compra");
+            double precioTotal= preciounitario*entradas;
 
+            
+            System.out.println("Aqui tiene sus entradas. Gracias por su compra");
+            // System.out.println();
+            
+            // System.out.println("Usted ha comprado "+entradas+" para el dia "+dia);
+
+            // System.out.println();
+
+            
+            // if (tarjeta==false) {
+            //     System.out.println("Usted no cuenta con tarjeta");
+
+            //     System.out.println("Precio total a pagar:");
+            //     System.out.println(precioTotal);
+            // }
+
+            // else {
+            //     double descuento=0.10;
+
+            //     precioTotal=precioTotal-(precioTotal*descuento);
+            //     System.out.println("Usted posee tarjeta, recibe un descuento del 10%");
+                
+            //     System.out.println("Precio total a pagar:");
+            //     System.out.println(precioTotal);
+            // }
             // if  (dia.equalsIgnoreCase("Jueves") && entradas%2==0) {
             //     System.out.println("Entradas grupales:");
             //     System.out.println(entradas/2);
@@ -76,7 +101,7 @@ public class Ejercicio1V3 {
             // }
 
             if (dia.equalsIgnoreCase("Jueves")) {
-                if (tarjeta=false) {
+                if (tarjeta==false) {
                     System.out.println("Entradas grupales: "+(entradas/2));
                     preciounitario=11;
                     System.out.println("Precio por entrada individual: "+preciounitario);
@@ -103,10 +128,11 @@ public class Ejercicio1V3 {
 
                     System.out.println("A pagar: "+(total-descuentotarjeta));
                 }
+            }
 
             if (dia.equalsIgnoreCase("Miercoles")) {
                 
-                if (tarjeta=false) {
+                if (tarjeta==false) {
                     System.out.println("Entradas individuales: "+entradas);
                     System.out.println("Precio por entrada individual: "+preciounitario);
                     double total;
@@ -122,9 +148,7 @@ public class Ejercicio1V3 {
 
                     System.out.println("A pagar: "+(total-descuento));
                 }
-            }
-
-                else {
+            } else {
                     
                     
                     System.out.println("Entradas individuales: "+entradas);
@@ -147,9 +171,27 @@ public class Ejercicio1V3 {
                     System.out.println("A pagar: "+(total-descuentototal));
                 }
 
-            // else {
+            if (dia.equalsIgnoreCase("Lunes") || dia.equalsIgnoreCase("Martes") || dia.equalsIgnoreCase("Viernes") || dia.equalsIgnoreCase("Sabado") || dia.equalsIgnoreCase("Domingo")) {
 
-            // }
+                System.out.println("Entradas individuales: "+entradas);
+                System.out.println("Precio por entrada individual: "+preciounitario);
+                double total;
+                total=preciounitario*entradas;
+
+                System.out.println("Total: "+total);
+
+                if (tarjeta) {
+                    System.out.println("Usted no tiene la tarjeta");
+                    System.out.println("Total a pagar: "+total);
+                }
+
+                else {
+                    System.out.println("Usted posee la tarjeta");
+                    double descuento=total/10;
+                    System.out.println("Descuento: "+descuento);
+
+                    System.out.println("A pagar: "+(total-descuento));
+                }
 
 
            
