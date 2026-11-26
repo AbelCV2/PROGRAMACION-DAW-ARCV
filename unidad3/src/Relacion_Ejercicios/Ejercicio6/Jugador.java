@@ -1,8 +1,8 @@
 package Relacion_Ejercicios.Ejercicio6;
 
 public class Jugador {
-    String nombre;
-    Carta carta;
+    private String nombre;
+    private Carta carta;
 
     public Jugador() {}
 

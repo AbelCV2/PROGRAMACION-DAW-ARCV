@@ -2,13 +2,14 @@ package Relacion_Ejercicios.Ejercicio6;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Juegov3 {
-    int ganadas1, ganadas2;
+    private int ganadas1, ganadas2;
 
     //CREO UN ATRIBUTO PARA LOS EMPATES (OPCIONAL)
-    int empates;
+    private int empates;
 
     String[] palos={"Oros", "Copas", "Espadas", "Bastos"};
     //String[] palos = new String[48];
@@ -28,7 +29,7 @@ public class Juegov3 {
         int num;  //VARIABLE PARA DARLE UN VALOR ENTRE 1 Y 48 PARA LUEGO ASOCIARLO
 
         do {
-            num=(int)(Math.random()*48); //BUCLE QUE GENERA UN NUMERO ENTRE 1 Y 48
+            num=(int)(Math.random()*48); //BUCLE QUE GENERA UN NUMERO ENTRE 0 Y 48
         }while(utilizadas[num]); //COMPRUEBA SI LA POSICION YA ESTA UTILIZADA
         //SI YA ESTA UTILZIDA (TRUE) VUELVE A GENERAR OTRA
 
@@ -224,8 +225,8 @@ public class Juegov3 {
             statspartida.close();
             System.out.println("===================================");
             System.out.println("El archivo se ha creado con exito");
-        }catch(FileNotFoundException e) {
-            e.printStackTrace();
+        }catch(IOException e) {
+            System.out.println("Error al crear el archivo "+e.getMessage());
         }
     }
 }

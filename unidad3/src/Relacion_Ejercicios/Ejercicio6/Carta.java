@@ -1,8 +1,8 @@
 package Relacion_Ejercicios.Ejercicio6;
 
 public class Carta {
-    int valor;
-    String palo;
+    private int valor;
+    private String palo;
 
     public Carta() {}
 
